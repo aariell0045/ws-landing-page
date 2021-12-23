@@ -1,14 +1,13 @@
 import React from "react";
 import "./App.css";
 import Navbar from "./components/Navbar";
-import { Routes, Route } from "react-router-dom";
 import HomePage from "./components/HomePage";
 function App() {
 	return (
-		<>
-			<Navbar />
+		<section style={{ height: "100%" }}>
+			{/* <Navbar /> */}
 			<HomePage />
-		</>
+		</section>
 	);
 }
 

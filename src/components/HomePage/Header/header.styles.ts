@@ -30,15 +30,19 @@ export const ParagraphContainer = styled.div`
 
 export const ParagraphTitle = styled.h1`
 	text-align: center;
-	::before {
+	::after {
 		content: "? ";
 	}
+
+	font-size: 70px;
 `;
 export const Paragraph = styled.p`
 	text-align: center;
-	::before {
+	::after {
 		content: ".";
 	}
+
+	font-size: 35px;
 `;
 
 export const Video = styled.video`
