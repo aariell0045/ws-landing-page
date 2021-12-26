@@ -6,7 +6,11 @@ const PopUpContact = () => {
 	return (
 		<Style.Container
 			onClick={() => {
-				window.open(WS_CONTACT_URL);
+				if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+					window.open(WS_CONTACT_URL);
+
+					return true;
+				} else window.open(WS_CONTACT_URL);
 			}}
 		>
 			<Style.ContainerBackground></Style.ContainerBackground>
