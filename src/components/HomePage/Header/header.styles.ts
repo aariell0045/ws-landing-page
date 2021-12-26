@@ -10,6 +10,8 @@ export const TitleContainer = styled.header`
 	display: flex;
 	justify-content: center;
 	position: relative;
+	@media (max-width: 375px) and (max-height: 812px) {
+	}
 `;
 
 export const TitleLogo = styled.img`
@@ -47,6 +49,10 @@ export const Paragraph = styled.p`
 
 export const Video = styled.video`
 	border-radius: 10px;
+	@media (max-width: 400px) and (max-height: 900px) {
+		width: 100vw;
+		height: 250px;
+	}
 `;
 
 export const VideoContainer = styled.div`

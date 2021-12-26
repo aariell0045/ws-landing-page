@@ -5,14 +5,22 @@ export const Container = styled.div`
 	height: 100px;
 	border: 1px;
 	position: fixed;
-
-	right: 0px;
+	right: -460px;
 	bottom: 30px;
 	z-index: 1;
 	border-radius: 30px;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
+
+	@media (max-width: 400px) and (max-height: 900px) {
+		width: 200px;
+		height: 100px;
+	}
+`;
+
+export const Wrapper = styled.div`
+	position: fixed;
 `;
 
 export const ContainerBackground = styled.div`

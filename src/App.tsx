@@ -2,12 +2,14 @@ import React from "react";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import HomePage from "./components/HomePage";
+import { GlobalStyle } from "./styles/global.styles";
 function App() {
 	return (
-		<section style={{ height: "100%" }}>
+		<>
+			<GlobalStyle />
 			{/* <Navbar /> */}
 			<HomePage />
-		</section>
+		</>
 	);
 }
 
