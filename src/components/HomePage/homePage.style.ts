@@ -8,6 +8,9 @@ export const Container = styled.div`
 	height: 100%;
 	position: relative;
 	margin-top: 100px;
+	@media (max-width: 400px) and (max-height: 900px) {
+		margin-top: 10px;
+	}
 `;
 
 export const Background = styled.div`
@@ -23,4 +26,7 @@ export const Wrapper = styled.div`
 	align-items: center;
 	flex-direction: column;
 	direction: rtl;
+	@media (max-width: 400px) and (max-height: 900px) {
+		width: 100%;
+	}
 `;

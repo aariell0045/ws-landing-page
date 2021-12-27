@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-import { FONT_FAMILIES, FONT_SIZES } from "./fonts.styles";
+import { FONT_FAMILIES, FONT_SIZES_WEB } from "./fonts.styles";
 import { Colors } from "./colors.styles";
 
 export const GlobalStyle = createGlobalStyle`
@@ -12,7 +12,7 @@ export const GlobalStyle = createGlobalStyle`
         height: 100%;
         margin: 0;
         font-family: ${FONT_FAMILIES.REGULAR};
-      	font-size: ${FONT_SIZES.BODY};
+      	font-size: ${FONT_SIZES_WEB.BODY};
 				background: ${Colors.white};
       	box-sizing: border-box;
 				scrollbar-color: ${Colors.black} ${Colors.black};

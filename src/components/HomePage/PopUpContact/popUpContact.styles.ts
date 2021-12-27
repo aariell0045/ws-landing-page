@@ -1,7 +1,8 @@
 import styled from "styled-components";
 import WhatsappIconURL from "../../../assets/whatsapp-icon.jpg";
+import { FONT_SIZES_MOBILE, FONT_SIZES_WEB } from "../../../styles/fonts.styles";
 export const Container = styled.div`
-	width: 500px;
+	width: 460px;
 	height: 100px;
 	border: 1px;
 	position: fixed;
@@ -14,8 +15,9 @@ export const Container = styled.div`
 	align-items: center;
 
 	@media (max-width: 400px) and (max-height: 900px) {
-		width: 200px;
-		height: 100px;
+		width: 180px;
+		height: 50px;
+		right: -490px;
 	}
 `;
 
@@ -41,6 +43,10 @@ export const Paragraph = styled.p`
 	font-size: 50px;
 	color: white;
 	font-weight: 500;
+	font-size: ${FONT_SIZES_WEB.CONTACT};
+	@media (max-width: 400px) and (max-height: 900px) {
+		font-size: ${FONT_SIZES_MOBILE.CONTACT};
+	}
 `;
 
 export const WhatsappIcon = styled.div`
@@ -50,4 +56,9 @@ export const WhatsappIcon = styled.div`
 	background-position: center;
 	background-size: 120%;
 	border-radius: 10px;
+	background-repeat: no-repeat;
+	@media (max-width: 400px) and (max-height: 900px) {
+		width: 40px;
+		height: 70%;
+	}
 `;
